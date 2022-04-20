@@ -1,0 +1,49 @@
+body{
+    display: grid;
+    grid-template-areas:
+    "Header"
+    "Grid"
+    "HUD";
+    grid-row-gap: 5px;
+    grid-template-rows: 0.5fr 2.5fr 1fr;
+    grid-template-columns: 420px;
+
+    text-align: center;
+    justify-content: center;
+}
+
+#grid{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.square{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: dimgray;
+
+    font-size: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+#jogador, #vencedor{
+    font-size: 30px;
+    margin-top: 18px;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    margin-top: 18px;
+    cursor: pointer;
+}

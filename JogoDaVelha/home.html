@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stile.css">
+    <title>Jogo da Velha</title>
+</head>
+<body onload="ResetSquares()">
+<header>
+    <h1>Jogo da Velha</h1>
+</header>
+<section id="grid">
+    <span id="E1" class="square" onclick="PickSquare(this)"></span>
+    <span id="E2" class="square" onclick="PickSquare(this)"></span>
+    <span id="E3" class="square" onclick="PickSquare(this)"></span>
+    <span id="E4" class="square" onclick="PickSquare(this)"></span>
+    <span id="E5" class="square" onclick="PickSquare(this)"></span>
+    <span id="E6" class="square" onclick="PickSquare(this)"></span>
+    <span id="E7" class="square" onclick="PickSquare(this)"></span>
+    <span id="E8" class="square" onclick="PickSquare(this)"></span>
+    <span id="E9" class="square" onclick="PickSquare(this)"></span>
+</section>
+<section id="HUD">
+    <div id="jogador">
+        <label>
+            Jogador:
+        </label>
+        <label id="playerMark">
+            X
+        </label>
+    </div>
+    <div id="vencedor">
+        <label>
+            Vencedor:
+        </label>
+        <label id="winnerMark">
+            O
+        </label>
+    </div>
+    <div>
+        <button onclick="ResetSquares()">
+            Reiniciar
+        </button>
+    </div>
+</section>
+</body>
+<script src="script.js">
+
+</script>
+</html>
